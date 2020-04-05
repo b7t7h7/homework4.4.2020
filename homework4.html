@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./homework4.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+   
+    <nav>
+        <div>
+            <a onclick="return false" id="sbLink">View Highscores</a>
+        </div>
+        <div>
+            <a onclick="return false" id="countdown">Timer</a>
+        </div>
+    </nav>
+
+  
+    <main class="container" id="Cover">
+        <header class="row">
+            <div class="page-header">
+                <h1>Coding Quiz</h1>
+                <hr>
+            </div>
+        </header>
+
+        <section class="row">
+            <summary>
+                Try to answer the following code-related quiz questions within the time limit. Keep in mind that incorrect answers will penalize your score time by 10 seconds.
+            </summary>
+            <button id="startBtn">Start Quiz</button>
+        </section>
+    </main>
+
+    
+    <main class="container Questions hidden" id="Question1">
+        <section class="row">
+            <summary>
+                What is a Boolean?
+                    <button correct="false">A. A 64-bit signed integer</button>
+                    <button correct="false">B. A variable that holds zero or more characters such as letters and numbers</button>
+                    <button correct="true">C. A binary variable composed of two possible values, “true” and “false”</button>
+                    <button correct="false">D. A variable declaration that will have digits on both sides of a decimal point</button>
+            </summary>
+        </section>
+        <hr>
+    </main>
+
+    
+    <main class="container Questions hidden" id="Question2">
+        <section class="row">
+            <summary>
+                What is an Array?
+                    <button correct="false">A. A powerful laser</button>
+                    <button correct="false">B. What sunshine emits</button>
+                    <button correct="true">C. A data structure consisting of a collection of elements</button>
+                    <button correct="false">D. One of the Romano brothers</button>
+            </summary>
+        </section>
+        <hr>
+    </main>
+
+   
+    <main class="container Questions hidden" id="Question3">
+        <section class="row">
+            <summary>
+                The 3 main programming languages on the Web are:
+                    <button correct="false">A. Plankalkul, Regional Assembly Language, FORTRAN</button>
+                    <button correct="false">B. Python, C++, Smalltalk</button>
+                    <button correct="false">C. Ruby, Lisp, Perl</button>
+                    <button correct="true">D. HTML, CSS, Javascript</button>
+            </summary>
+        </section>
+        <hr>
+    </main>
+
+  
+    <main class="container Questions hidden" id="Question4">
+        <section class="row">
+            <summary>
+                What does HTML stand for?
+                    <button correct="false">A. High-level Tool Management Language</button>
+                    <button correct="false">B. Hardware Terminal Memory Language</button>
+                    <button correct="true">C. Hypertext Markup Language</button>
+                    <button correct="false">D. High Text Memory Language</button>
+            </summary>
+        </section>
+        <hr>
+    </main>
+
+   
+    <main class="container Questions hidden" id="Question5">
+        <section class="row">
+            <summary>
+                What does CSS stand for?
+                    <button correct="false">A. Central Security Software</button>
+                    <button correct="false">B. Counter-Strike: Source</button>
+                    <button correct="false">C. Computer Service Support</button>
+                    <button correct="true">D. Cascading Style Sheets</button>
+            </summary>
+        </section>
+        <hr>
+    </main>
+
+   
+    <footer class="hidden" id="correctFooter">
+        Correct!
+    </footer>
+
+    <footer class="hidden" id="incorrectFooter">
+        Incorrect. Try again.
+    </footer>
+
+   
+    <main class="container hidden" id="inputScoreInfo">
+        <header class="row">
+            <div class="page-header">
+                <h1>Congratulations!</h1>
+                <hr>
+            </div>
+        </header>
+
+        <section>
+            <summary>
+                Final Score: <span id="finalScore"></span>
+            </summary>
+            <summary>
+                Enter Initials:
+                <input id=initalsInput type="text">
+            </summary>
+            <button id=initalsSubmit>Submit</button>
+        </section>
+    </main>
+
+    
+    <main class="container hidden" id="score-card">
+        <header class="row">
+            <div class="page-header">
+                <h1>Highscores</h1>
+                <hr>
+            </div>
+        </header>
+
+        <section>
+            <ol id="scoreboard">
+                
+            </ol>
+            <div class="sbbtns">
+                <button id="tryAgain">Try Again</button>
+                <button id="clearBtn">Clear Highscores</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./homework4.js">
+    </script>
+  </body>
+</html>

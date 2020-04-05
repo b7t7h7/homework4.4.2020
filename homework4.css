@@ -1,0 +1,81 @@
+nav {
+    padding: 25px;
+    background-color: rgb(5, 0, 0);
+    color: white;
+    margin-bottom: 50px;
+  }
+  
+  nav div{
+    display: inline;
+  }
+  
+  #sbLink {
+    cursor: pointer;
+  }
+  
+  #countdown {
+    position: absolute;
+    right: 25px;
+    cursor: default;
+  }
+  
+  .page-header {
+    width: 100%;
+    text-align: center;
+  }
+  
+  summary {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+  button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+    background-color: rgb(12, 240, 23);
+    color: white;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background-color: rgb(253, 2, 2);
+  }
+  
+  .Questions {
+    font-weight: bold;
+    padding: 0;
+  }
+  
+  .Questions button {
+    margin: 0;
+  }
+  
+  #inputScoreInfo summary {
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  #score-card button {
+    display: inline;
+  }
+  
+  .sbbtns {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .sbbtns button:first-child {
+    margin-right: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
